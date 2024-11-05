@@ -1,0 +1,44 @@
+.flag-green {
+    height: 250px;
+    width: 450px;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: rgb(57, 68, 57);
+
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.flag-red {
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: rgb(160, 168, 160);
+    border-radius: 50%;
+
+    margin-top: 75px;
+    margin-left: 165px;
+}
+
+.bar {
+    height: 600px;
+    width: 30px;
+    border: 1px solid rgb(114, 41, 41);
+    background-color: rgb(114, 41, 41);
+
+    margin-top: -270px;
+    margin-left: 60px;
+}
+
+.grounding-1 {
+    height: 50px;
+    width: 150px;
+    border: 1px solid rgb(114, 41, 41);
+    background-color: rgb(114, 41, 41);
+}
+
+.grounding-2 {
+    height: 50px;
+    width: 250px;
+    border: 1px solid rgb(114, 41, 41);
+    background-color: rgb(114, 41, 41);
+}
