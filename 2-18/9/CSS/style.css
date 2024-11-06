@@ -77,12 +77,20 @@
     height: 100px;
 }
 
+.h-125 {
+    height: 125px;
+}
+
 .h-150 {
     height: 150px;
 }
 
 .h-200 {
     height: 200px;
+}
+
+.h-250 {
+    height: 250px;
 }
 
 .h-300 {
@@ -97,6 +105,10 @@
     height: 500px;
 }
 
+.h-600 {
+    height: 600px;
+}
+
 .bg-aqua {
     background-color: aqua;
 }
@@ -104,3 +116,12 @@
 .bg-gray {
     background-color: gray;
 }
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-red {
+    background-color: red;
+}
+
