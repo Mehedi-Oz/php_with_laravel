@@ -168,6 +168,45 @@
     color: red;
 }
 
+.sub-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+
+.menu-bar ul li:hover .sub-menu ul {
+    display: block;
+}
+
+.menu-bar ul li:hover .sub-menu ul li {
+    width: 100px;
+    border-bottom: 1px dotted;
+    margin-left: 25px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.sub-sub-menu {
+    display: none;
+}
+
+.hover-li:hover .sub-sub-menu {
+    display: block;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+
+.hover-li:hover .sub-sub-menu ul li {
+    width: 125px;
+}
+
+
 @media screen and (min-width:320px) and (max-width:480px) {
 
     .col-xs-1 {
