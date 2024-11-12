@@ -1,0 +1,46 @@
+header {
+    height: 100px;
+}
+
+header img {
+    height: 100px !important;
+}
+
+.banner {
+    width: 100%;
+}
+
+.navbar-bg {
+    background-color: rgb(196, 196, 196);
+}
+
+nav ul li {
+    padding: 0px 90px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-family: merriweather-bold;
+    color: black !important;
+}
+
+.slider img {
+    height: 350px;
+}
+
+.slider .button {
+    border-radius: 50% !important;
+    height: 30px !important;
+}
+
+/* .merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+} */

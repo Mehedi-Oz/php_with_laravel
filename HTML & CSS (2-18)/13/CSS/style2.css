@@ -1,0 +1,86 @@
+header img {
+    height: 100px !important;
+}
+
+.banner {
+    width: 100%;
+}
+
+header .col-md-3{
+    padding: 0 !important;
+}
+
+header .col-md-9{
+    padding: 0 !important;
+}
+
+nav .col-md-12 {
+    padding: 0 !important;
+}
+
+nav ul li {
+    padding: 0px 90px;
+}
+
+nav ul li:hover {
+    background-color: aquamarine;
+    border-radius: 5%;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-family: "merriweather-regular";
+    font-size: 17px !important;
+}
+
+.slider .col-md-12{
+    padding: 0;
+}
+
+.slider img {
+    height: 400px;
+}
+
+.slider .dot-indicator {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+.layer {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    left: 200px;
+    top: 100px;
+    opacity: .6;
+
+}
+
+.c-caption {
+    position: absolute;
+    z-index: 2 !important;
+    left: 210px;
+    top: 85px;
+    width: 230px;
+    text-align: justify;
+}
+
+.c-caption-button {
+    width: 230px;
+    border-radius: 5%;
+}
+
+.c-caption {
+    font-family: "merriweather-regular";
+}
+
+.left-content {
+    height: 600px;
+    background-color: rgb(196, 208, 218);
+}
+
+.main-content{
+    background-color: rgb(192, 194, 196);
+}
