@@ -1,0 +1,147 @@
+header img {
+    height: 100px !important;
+    width: 100%;
+}
+
+.col-padding {
+    padding: 0% !important;
+}
+
+nav {
+    font-family: "merriweather-regular";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navBar {
+    background-color: rgb(165, 204, 191);
+}
+
+nav ul li {
+    padding: 0px 90px;
+}
+
+nav ul li a{
+    color: #525252 !important;
+}
+
+nav ul li:hover a {
+    color: #000 !important;
+}
+
+nav ul li:hover {
+    background-color: rgb(142, 221, 195);
+    border-radius: 5px;
+    color: #000 !important;
+}
+
+.slider {
+    font-family: "merriweather-regular";
+}
+
+.slider img {
+    height: 400px;
+}
+
+.carousel-indicators .dot-indicator {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+
+.layer {
+    position: absolute;
+    height: 315px;
+    width: 345px;
+    left: 281px;
+    top: 28px;
+    background-color: aliceblue;
+    opacity: .6;
+    border-radius: 4px;
+}
+
+.c-caption {
+    color: black;
+    text-align: justify;
+    left: 303px;
+    top: 22px;
+    width: 300px;
+    height: 300px;
+}
+
+/*
+.c-caption {
+    position: absolute;
+    z-index: 2 !important;
+}
+*/
+.carousel-readmore-button {
+    width: 303px;
+}
+
+.left-content {
+    background-color: rgb(149, 194, 179);
+}
+
+
+.about-content {
+    padding: 20px 20px;
+    background-color: rgb(185, 223, 210);
+}
+
+.about-content .self-img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.content {
+    font-family: "merriweather-regular";
+    text-align: justify;
+}
+
+.recent-project-content {
+    background-color: rgb(166, 194, 184);
+    padding: 20px 20px;
+}
+
+.about-button {
+    padding: 10px 35px;
+    font-weight: bold;
+}
+
+.recent-project-text {
+    text-align: center;
+}
+
+.recent-project-heading::after {
+    position: absolute;
+    content: ' ';
+    height: 100px;
+    width: 250px;
+    border-bottom: 3px solid #525050;
+    left: 943px;
+    top: 856px;
+}
+
+.recent-project-paragraph {
+    padding-top: 2px;
+}
+
+.recent-project-paragraph {
+    text-transform: capitalize;
+}
+
+.big-footer {
+    font-family: "merriweather-regular";
+    background-color: rgb(165, 204, 191);
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+.small-footer {
+    background-color: rgb(192, 223, 213);
+    font-family: "merriweather-regular";
+    text-align: center;
+    padding-top: 14px;
+}
