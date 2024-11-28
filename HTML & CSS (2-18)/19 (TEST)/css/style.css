@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+.row{
+  --bs-gutter-x: 0 !important;
+}
+
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+header {
+  font-family: 'Raleway', sans-serif;
+  padding: 0%;
+  color: white;
+}
+
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../image/hero-bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-heading {
+  padding-top: 20px;
+  position: relative;
+}
+
+.header-text h1 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.navbar ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 19.5px;
+  color: white;
+}
+
+.navbar ul li {
+  padding: 0px 23px;
+}
+
+.navbar ul li:hover a {
+  color: #FFC451 !important;
+}
+
+.active-nav-home {
+  color: #FFC451 !important;
+}
+
+.get-started-button button {
+  width: 160px;
+  font-weight: 600;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+}
+
+.header-middle h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  padding-top: 125px;
+}
+
+.header-middle p {
+  text-align: center;
+  font-size: 31px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.header-middle {
+  padding-bottom: 80px;
+}
+
+.header-bottom {
+  padding-bottom: 300px;
+}
+
+.header-boxes {
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  height: 200px;
+  width: 215px;
+  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-boxes i {
+  color: #FFC451;
+  font-size: 35px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.header-boxes h2 {
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.first-section {
+  padding: 70px 0px;
+}
+
+.first-section-text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.first-section-text i {
+  color: #FFC451;
+}
+
+.first-section-text h2 {
+  font-size: 35px !;
+  font-weight: bold;
+}
+
+.first-section-image img {
+  width: 630px;
+  height: 450px;
+}
+
+.first-section-text span p {
+  margin-top: -25px;
+  margin-left: 20px;
+}
+
+.first-section-text p {
+  font-weight: 450;
+  font-size: 17px;
+}
+
+.second-section-image img {
+  width: 630px;
+  height: 450px;
+}
+
+.second-section{
+  padding-bottom: 70px;
+}
+
+.second-section i {
+  color: #FFC451;
+  font-size: 45px;
+  padding-top: 7px;
+}
+
+.second-section p {
+  font-size: 17px;
+}
+
+.text-second-section{
+  padding-left: 55px;
+  margin-top: -50px;
+  padding-bottom: 4px;
+}
