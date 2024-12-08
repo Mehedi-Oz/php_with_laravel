@@ -1,0 +1,14 @@
+{
+  "name": "practice26/practice26",
+  "type": "project",
+  "description": "A simple project",
+  "license": "",
+  "keywords": [],
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "APP\\": "app//"
+    }
+  }
+}
