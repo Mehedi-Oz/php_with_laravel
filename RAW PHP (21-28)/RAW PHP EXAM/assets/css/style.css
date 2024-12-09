@@ -1,0 +1,18 @@
+.container {
+    background-color: #8ba4e5;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    background-color: #bfc7ea !important;
+}
+
+.navbar ul li a {
+    margin: 0px 68px;
+    padding: 10px 50px !important;
+    font-weight: bold;
+}
+
+.navbar ul li . all-dropdowns {
+    margin: 0px !important;
+}

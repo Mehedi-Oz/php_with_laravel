@@ -1,0 +1,14 @@
+{
+  "name": "raw-php-exam/raw-php-exam",
+  "type": "project",
+  "description": "A simple PHP Project",
+  "keywords": [],
+  "license": "",
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "APP\\": "app//"
+    }
+  }
+}
