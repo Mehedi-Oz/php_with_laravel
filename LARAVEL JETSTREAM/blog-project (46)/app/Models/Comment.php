@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Session;
 
 class Comment extends Model
 {
@@ -11,11 +12,11 @@ class Comment extends Model
 
     public static $comment;
 
-    public function saveComment($request)
+    public static function saveComment($request)
     {
-        $request->validate([
-            'comment' => 'require|min10|max:100'
-        ]);
+//        $request->validate([
+//            'comment' => 'require|min10|max:100'
+//        ]);
         self::$comment = new Comment();
         self::$comment->customer_id = Session::get('customerId');
         self::$comment->blog_id = $request->blog_id;

@@ -27,9 +27,9 @@ Route::post('/update-customer', [CustomerController::class, 'updateCustomer'])->
 Route::get('/edit-customer/{id}', [CustomerController::class, 'editCustomer'])->name('customer.edit');
 Route::post('/delete-customer', [CustomerController::class, 'deleteCustomer'])->name('customer.delete');
 
-Route::group(['middleware' => 'blogUser'], function () {
-    Route::post('/new-comment', [CommentController::class, 'saveComment'])->name('new.comment');
-});
+
+//CommentController
+Route::post('/new-comment', [CommentController::class, 'saveComment'])->name('new.comment');
 
 //middleware
 Route::middleware([
@@ -37,8 +37,6 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    //DashboardController
-//    Route::post('/new-comment', [])
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 

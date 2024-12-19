@@ -70,6 +70,7 @@ class BlogController extends Controller
         $blogDetails = Blog::where('slug', $slug)->first();
         $blogCategory = $blogDetails->category_id;
         $relatedBlogs = Blog::where('category_id', $blogCategory)->get();
+        $comment = Comment::where('blog_id', $blogDetails->id)->get();
 //        return $relatedBlogs;
         return view('frontEnd.home.blog-details', [
             'blog' => $blogDetails,

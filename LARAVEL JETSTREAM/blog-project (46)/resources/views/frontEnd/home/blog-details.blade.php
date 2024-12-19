@@ -88,7 +88,7 @@
                         </div>
                         <div class="blog-author-info">
                             <div class="author-img">
-                                <img src="{{asset('front-end-asset')}}/images/writer.jpg" alt="">
+                                <img src="{{asset('front-end-asset')}}/images/city-pink.jpg" alt="">
                             </div>
                             <div class="author-desc">
                                 <small>written by</small>
@@ -105,100 +105,104 @@
                                 </a>
                             </div>
                             <div class="collapse" id="collapseExample">
-                                <div class="card comment-card">
-                                    <div class="card-body">
-                                        <div class="author-date">
-                                            <div class="author">
-                                                <img src="{{asset('front-end-asset')}}/images/person1.jpg" alt=""
-                                                     class="rounded-circle"/>
-                                            </div>
-                                            <div class="inner-author-date">
-                                                <div class="author">
-                                                    <span class="">Ana Grainger</span>
-                                                </div>
-                                                <div class="date"><span>1 Feb, 2019</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="comment-text mt-2">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quos optio
-                                                ab numquam excepturi commodi nam omnis eaque, culpa earum!</p>
-                                        </div>
-                                    </div>
-
+                                @foreach($comments as $comment)
                                     <div class="card comment-card">
                                         <div class="card-body">
                                             <div class="author-date">
                                                 <div class="author">
-                                                    <img src="{{asset('front-end-asset')}}/images/writer.jpg" alt=""
+                                                    <img src="{{asset('front-end-asset')}}/images/city-pink.jpg" alt=""
                                                          class="rounded-circle"/>
                                                 </div>
                                                 <div class="inner-author-date">
                                                     <div class="author">
-                                                        <span>Julie Perry</span>
+                                                        <span class="">{{Session::get('customerName')}}</span>
                                                     </div>
-                                                    <div class="date"><span>1 Feb, 2019</span></div>
+                                                    <div class="date">
+                                                        <span>{{date('F j Y', strtotime($comment->created_at))}}</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="comment-text mt-2">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quos
-                                                    optio
-                                                    ab numquam excepturi commodi nam omnis eaque, culpa earum!</p>
+                                                <p>{{$comment->comment}}</p>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="card comment-card">
-                                    <div class="card-body">
-                                        <div class="author-date">
-                                            <div class="author">
-                                                <img src="{{asset('front-end-asset')}}/images/person2.jpg" alt=""
-                                                     class="rounded-circle"/>
-                                            </div>
-                                            <div class="inner-author-date">
-                                                <div class="author">
-                                                    <span class="">Iman Lindsay</span>
+                                        @endforeach
+
+                                        {{--<div class="card comment-card">
+                                            <div class="card-body">
+                                                <div class="author-date">
+                                                    <div class="author">
+                                                        <img src="{{asset('front-end-asset')}}/images/writer.jpg" alt=""
+                                                             class="rounded-circle"/>
+                                                    </div>
+                                                    <div class="inner-author-date">
+                                                        <div class="author">
+                                                            <span>Julie Perry</span>
+                                                        </div>
+                                                        <div class="date"><span>1 Feb, 2019</span></div>
+                                                    </div>
                                                 </div>
-                                                <div class="date"><span>1 Feb, 2019</span></div>
-                                            </div>
-                                        </div>
-                                        <div class="comment-text mt-2">
-                                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsum
-                                                voluptatum suscipit
-                                                ipsam, dolorem quas animi magnam repellendus. Quidem unde maxime fugit,
-                                                cupiditate veritatis
-                                                maiores dolor corporis consequuntur pariatur quo culpa ipsum! Eos
-                                                aliquid deserunt incidunt
-                                                ratione ullam eaque. Ducimus?
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card comment-card">
-                                    <div class="card-body">
-                                        <div class="author-date">
-                                            <div class="author">
-                                                <img src="{{asset('front-end-asset')}}/images/person3.jpg" alt=""
-                                                     class="rounded-circle"/>
-                                            </div>
-                                            <div class="inner-author-date">
-                                                <div class="author">
-                                                    <span class="">Simone Bob</span>
+                                                <div class="comment-text mt-2">
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quos
+                                                        optio
+                                                        ab numquam excepturi commodi nam omnis eaque, culpa earum!</p>
                                                 </div>
-                                                <div class="date"><span>1 Feb, 2019</span></div>
                                             </div>
-                                        </div>
-                                        <div class="comment-text mt-2">
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quos optio
-                                                ab numquam excepturi commodi nam omnis eaque, culpa earum!</p>
-                                        </div>
+                                        </div>--}}
                                     </div>
-                                </div>
+                                    {{--                                <div class="card comment-card">
+                                                                        <div class="card-body">
+                                                                            <div class="author-date">
+                                                                                <div class="author">
+                                                                                    <img src="{{asset('front-end-asset')}}/images/person2.jpg" alt=""
+                                                                                         class="rounded-circle"/>
+                                                                                </div>
+                                                                                <div class="inner-author-date">
+                                                                                    <div class="author">
+                                                                                        <span class="">Iman Lindsay</span>
+                                                                                    </div>
+                                                                                    <div class="date"><span>1 Feb, 2019</span></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="comment-text mt-2">
+                                                                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsum
+                                                                                    voluptatum suscipit
+                                                                                    ipsam, dolorem quas animi magnam repellendus. Quidem unde maxime fugit,
+                                                                                    cupiditate veritatis
+                                                                                    maiores dolor corporis consequuntur pariatur quo culpa ipsum! Eos
+                                                                                    aliquid deserunt incidunt
+                                                                                    ratione ullam eaque. Ducimus?
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card comment-card">
+                                                                        <div class="card-body">
+                                                                            <div class="author-date">
+                                                                                <div class="author">
+                                                                                    <img src="{{asset('front-end-asset')}}/images/person3.jpg" alt=""
+                                                                                         class="rounded-circle"/>
+                                                                                </div>
+                                                                                <div class="inner-author-date">
+                                                                                    <div class="author">
+                                                                                        <span class="">Simone Bob</span>
+                                                                                    </div>
+                                                                                    <div class="date"><span>1 Feb, 2019</span></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="comment-text mt-2">
+                                                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quos optio
+                                                                                    ab numquam excepturi commodi nam omnis eaque, culpa earum!</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>--}}
                             </div>
                             @if(Session::get('customerId'))
                                 <form class="comment-form" action="{{route('new.comment')}}" method="post">
                                     @csrf
-
+                                    {{session('comment')}}
                                     <input type="hidden" name="blog_id" value="{{$blog->id}}">
+
                                     <h5>Leave a comment</h5>
                                     <div class="row">
                                         <div class="col-12 mb-4">

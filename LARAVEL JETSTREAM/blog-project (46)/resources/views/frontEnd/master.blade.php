@@ -45,6 +45,7 @@
 </head>
 
 <body>
+
 <!-- Preloader -->
 <div class="preloader-wrapper">
     <div class="preloader">
@@ -56,6 +57,7 @@
     </div>
 </div>
 <!-- Preloader end -->
+
 <main class="kavya-home-3">
     @include('frontEnd.include.header')
     <!-- header end -->

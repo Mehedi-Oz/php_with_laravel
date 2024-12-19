@@ -10,6 +10,6 @@ class CommentController extends Controller
     public function saveComment(Request $request)
     {
         Comment::saveComment($request);
-        return back();
+        return back()->with('message','Uploaded Comment Successfully!');
     }
 }
